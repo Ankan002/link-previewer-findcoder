@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {useRecoilState} from "recoil";
 import {Theme} from "types/theme";
 import {themeAtom} from "atoms/theme-atom";
@@ -12,6 +12,7 @@ const MyComponent = (props: Props): JSX.Element => {
     const { children } = props;
 
     const [currentTheme, setCurrentTheme] = useRecoilState<Theme>(themeAtom);
+    const isMounted = useRef<boolean>(false);
 
     const loadTheme = () => {
         if(window === undefined) return;
@@ -25,11 +26,14 @@ const MyComponent = (props: Props): JSX.Element => {
         }
 
         if(savedTheme === "light" || savedTheme === "dark") setCurrentTheme(savedTheme);
-    }
+    };
 
     useEffect(() => {
-        loadTheme();
-    }, [])
+        if(!isMounted.current){
+            isMounted.current = true;
+            loadTheme();
+        }
+    }, []);
 
     return (
         <div className={`${currentTheme}`}>
