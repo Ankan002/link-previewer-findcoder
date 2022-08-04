@@ -1,0 +1,1 @@
+export { default as HeroDescription } from "./hero-description";
