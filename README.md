@@ -53,3 +53,7 @@ To display a nice looking container while that shows various meta data like titl
 <img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/light-result.png"/>
 
 <img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/dark-result.png"/>
+
+## Performance
+
+<img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/performance/lighthouse-result.svg"/>
