@@ -41,7 +41,6 @@ const HeroSection = () => {
         }
 
         setLinkPreviewData({});
-        console.log(result);
 
         setLinkPreviewData(result.data);
     }
