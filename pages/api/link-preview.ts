@@ -1,17 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { getLinkPreview as getPreview } from "link-preview-js";
 
-interface FetchedData  {
-    url: string;
-    title: string;
-    siteName: string | undefined;
-    description: string | undefined;
-    mediaType: string;
-    contentType: string | undefined;
-    images: string[];
-    favicons: string[];
-}
-
 const getLinkPreview = async(req: NextApiRequest, res: NextApiResponse) => {
     if(req.method !== "POST") {
         return res.status(400).json({
@@ -27,8 +16,6 @@ const getLinkPreview = async(req: NextApiRequest, res: NextApiResponse) => {
             followRedirects: "follow"
         });
 
-        console.log(previewData);
-
         return  res.status(200).json({
             success: true,
             data: {
@@ -42,10 +29,17 @@ const getLinkPreview = async(req: NextApiRequest, res: NextApiResponse) => {
     catch (e) {
         console.log(e);
 
+        if(e instanceof Error){
+            return res.status(500).json({
+                success: false,
+                error: e.message
+            });
+        }
+
         return res.status(500).json({
             success: false,
-            error: "Internal Server Error!! Check the console."
-        })
+            error: "Internal Server Error!!"
+        });
     }
 };
 

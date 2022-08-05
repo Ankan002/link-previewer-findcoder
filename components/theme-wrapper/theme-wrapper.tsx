@@ -4,7 +4,7 @@ import {Theme} from "types/theme";
 import {themeAtom} from "atoms/theme-atom";
 
 interface Props {
-    children: JSX.Element;
+    children: JSX.Element | JSX.Element[];
 }
 
 const MyComponent = (props: Props): JSX.Element => {
