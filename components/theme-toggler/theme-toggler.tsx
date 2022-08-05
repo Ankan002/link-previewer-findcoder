@@ -20,7 +20,7 @@ const MyComponent = (): JSX.Element => {
     }
 
     return (
-        <button className="absolute w-10 h-10 bottom-10 right-10 border-2 border-primaryDark dark:border-primaryLight bg-primaryYellow dark:bg-primaryOrange rounded-2xl p-2 flex justify-center items-center shadow-[0_1px_12px_2px_rgba(246,186,61,0.7)] dark:shadow-[0_1px_12px_2px_rgba(252,88,48,0.7)] z-10" onClick={onChangeThemePressed}>
+        <button className="absolute w-10 h-10 bottom-10 right-10 border-2 border-primaryDark dark:border-primaryLight bg-primaryYellow dark:bg-primaryOrange rounded-2xl p-2 flex justify-center items-center shadow-[0_1px_12px_2px_rgba(246,186,61,0.7)] dark:shadow-[0_1px_12px_2px_rgba(252,88,48,0.7)] z-10" onClick={onChangeThemePressed} name="toggle theme">
             {
                 currentTheme === "light" ? (
                     <BsFillMoonFill className="text-lg text-primaryDark" />
