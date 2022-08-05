@@ -46,10 +46,10 @@ To display a nice looking container while that shows various meta data like titl
 
 ## Screenshots
 
-![light mode]("https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/light-scr.png")
+<img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/light-scr.png"/>
 
-![dark mode]("https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/src-dark.png")
+<img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/src-dark.png"/>
 
-![light result]("https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/light-result.png")
+<img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/light-result.png"/>
 
-![dark result]("https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/dark-result.png")
+<img src="https://github.com/Ankan002/link-previewer-findcoder/blob/main/assets/screenshots/dark-result.png"/>
