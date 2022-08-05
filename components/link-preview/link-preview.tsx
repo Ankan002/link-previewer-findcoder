@@ -34,7 +34,7 @@ const LinkPreview = (props: Props): JSX.Element => {
 
             <div className="pt-2 mt-1 w-full bg-secondaryLight dark:bg-secondaryDark px-3 border-t-[1px] border-primaryDark/60 dark:border-primaryLight/60">
                 <a href={linkPreviewData.url} target="_blank" className="underline text-lg tracking-widest font-manrope text-primaryDark dark:text-primaryLight break-all" rel="noreferrer">
-                    {linkPreviewData.url?.substring(0,linkPreviewData.url?.length-1)}
+                    {`${linkPreviewData.url?.charAt(linkPreviewData.url?.length-1) === "/" ? linkPreviewData.url?.substring(0,linkPreviewData.url?.length-1) : linkPreviewData.url}`}
                 </a>
             </div>
         </div>
