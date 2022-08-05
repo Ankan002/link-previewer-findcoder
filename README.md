@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Link Previews
 
-## Getting Started
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=whitev)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Recoil](https://img.shields.io/badge/-Recoil-%233577E5?style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-First, run the development server:
+## AIM
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+To display a nice looking container while that shows various meta data like title, url etc just like it happens in case of Whatsapp or Facebook or any other social media sites.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- NodeJS
+- NextJS
+- Recoil
+- Typescript
+- TailwindCSS
+- Link Preview JS
+- Github
+- Vercel
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## How did I build it ?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- First of all I built a backend API with the help of NEXT API and Link Preview JS that helps me scrape meta tags. This API returns a JSON object conatining the following details:
 
-## Learn More
+  - Site URL
+  - Site Title
+  - Site Favicon
+  - Site Description
 
-To learn more about Next.js, take a look at the following resources:
+- The above mentioned API takes the requested URL via the body and Accepts a JSON object.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Now I consumed the data given to me from the backend via a JSON response and displayed the data in the frontend.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- In the frontend part of the things... I am taking the URL via a Text Input and calling the API with the URL in the body of the POST request.
 
-## Deploy on Vercel
+- Finally to add two cherries on the top I have added two eatures:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - A skeleton loader tht depicts the loading state while the backend query is being sent.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - A light and dark mode option so that every user can adjust according to their vission preferences.
+
+## Screenshots
+
+![light mode]("./assets/screenshots/light-scr.png")
+
+![dark mode]("./assets/screenshots/src-dark.png")
+
+![light result]("./assets/screenshots/light-result.png")
+
+![dark result]("./assets/screenshots/dark-result.png")
