@@ -38,7 +38,7 @@ To display a nice looking container while that shows various meta data like titl
 
 - In the frontend part of the things... I am taking the URL via a Text Input and calling the API with the URL in the body of the POST request.
 
-- Finally to add two cherries on the top I have added two eatures:
+- Finally to add two cherries on the top I have added two features:
 
   - A skeleton loader tht depicts the loading state while the backend query is being sent.
 
